@@ -12,7 +12,9 @@ assert.strictEqual(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']), 41);
 
 
 function sumMix (arr) {
+    //convert every element to a number
     let numArr = arr.map(x => Number(x))
     
+    //sum up the array using reduce
     return numArr.reduce((acc, cv) => acc + cv, 0)
 }
